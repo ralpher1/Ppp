@@ -1,20 +1,29 @@
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   font-family: system-ui, -apple-system, sans-serif;
   background: #1a1a2e;
   color: #eee;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 62px);
+  padding: 2rem;
 }
 
-p {
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #e94560, #ff6b81);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home p {
   font-size: 1.2rem;
   color: #aaa;
   margin-bottom: 2rem;
@@ -28,9 +37,14 @@ button {
   background: #e94560;
   color: white;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.15s;
 }
 
 button:hover {
   background: #c73750;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
 }
