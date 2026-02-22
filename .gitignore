@@ -1,0 +1,52 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Coverage & test artifacts
+coverage/
+.nyc_output/
+
+# Temp
+tmp/
+temp/
+
+# Node.js / React / Vite
+node_modules/
+dist/
+dist-ssr/
+build/
+.next/
+.nuxt/
+.output/
+.turbo/
+.cache/
+.parcel-cache/
+.eslintcache
+.tsbuildinfo
+*.tsbuildinfo
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
