@@ -1,0 +1,69 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 62px);
+  background: #1a1a2e;
+  color: #eee;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+  font-size: 1.15rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: #16213e;
+  border: 1px solid #0f3460;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: #e94560;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  color: #e94560;
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.about-footer {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.about-footer a {
+  color: #e94560;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.about-footer a:hover {
+  color: #ff6b81;
+}
